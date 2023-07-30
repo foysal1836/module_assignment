@@ -1,0 +1,40 @@
+<script>
+    function calculateGrade(score) {
+
+var roundedScore = Math.round(score);
+
+  var grade;
+  switch (true) {
+    case roundedScore >= 90:
+      grade 
+    
+      break;
+    case roundedScore >= 80:
+      grade = 'B';
+      break;
+    case roundedScore >= 70:
+      grade = 'C';
+      break;
+    case roundedScore >= 60:
+      grade = 'D';
+      break;
+    default:
+      grade = 'F';
+      break;
+  }
+
+  return grade;
+}
+
+
+var score1 = 88;
+var score2 = 95;
+var score3 = 73;
+
+document.write(`Score: ${score1}, Grade: ${calculateGrade(score1)}` );
+
+document.write(`Score: ${score2}, Grade: ${calculateGrade(score2)}`);
+
+document.write(`Score: ${score3}, Grade: ${calculateGrade(score3)}`);
+
+</script>
